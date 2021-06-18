@@ -1,0 +1,129 @@
+.pup-back{
+    height: 100vh;
+    display: flex;
+    background-color: rgb(255, 255, 255,70%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pup-content{
+    height: 300px;
+    width: 300px;
+    background-image:url("/couponbackground3.jpeg");
+    background-size: contain;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative;
+  
+    
+}
+.close{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+}
+.open-box{
+    margin-top: 0!important;
+    opacity: 1!important;
+    transition: margin 0.5s,opacity 0.3s;
+    
+}
+.close-box{
+   
+    display: none!important;
+    transition: display 0.6s;
+}
+.pup{
+    opacity: 0;
+    margin-top: 150px;
+}
+.close-pup{
+    margin-top: 150px!important;
+    opacity: 0!important;
+    transition: margin 0.3s,opacity 0.3s;
+}
+.height-content{
+    margin-top: 50px;
+    opacity: 0;
+}
+.pup-container{
+    height: 100%;
+    padding: 25px;
+}
+.pup-title,.pup-sale{
+    text-align: center;
+    
+}
+.pup-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.pup-sale{
+    font-size: 25px;
+    font-weight: 700;
+}
+.time-container{
+    display: flex;
+    justify-content: space-between;
+}
+#days,#hours,#minutes,#seconds{
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-top: 10px;
+    position: relative;
+}
+#days::before,
+#hours::before,
+#minutes::before{
+    content: ":";
+    font-size: 27px;
+    font-weight: 600;
+    position: absolute;
+    left: 56.5px;
+}
+.time-title{
+    width: 55px;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    opacity: 0.7;
+}
+.button-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.button-started{
+    width: 150px;
+    height: 40px;
+    background-color:#e63e5a ;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.button-content .text{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.7px;
+    opacity: 0.85;
+
+}
+.button-content a{text-decoration: none;}

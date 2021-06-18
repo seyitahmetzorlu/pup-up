@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyit Ahmet ZORLU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    <div class="pup-back">
+        
+    <div class="pup-content pup" >
+        <div class="close"><i class="fas fa-times"></i></div>
+        <div class="pup-container">
+        <div class="pup-title">SPRING SALE</div>
+        <div class="pup-sale">UP TO 87% OFF</div>
+        <div class="time-container mt-3">
+            <div id="days">
+                05
+                
+            </div>
+            <div id="hours">
+                17
+                
+            </div>
+            <div id="minutes">
+                22
+                >
+            </div>
+            <div id="seconds">
+                36
+                
+            </div>
+        </div>
+        <div class="time-container">
+            <div class="time-title">days</div>
+            <div class="time-title">hours</div>
+            <div class="time-title">minutes</div>
+            <div class="time-title">seconds</div>
+        </div>
+        <div class="button-content">
+        <a href="#"><div class="button-started">
+            GET STARTED
+        </div></a>
+        <div class="text mt-2">30-day money-back guarantee</div>
+    </div>
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        // Tarih ayarlamaları
+        (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let coupondate = "June 24, 2021 00:00:00",
+      countDown = new Date(coupondate).getTime(),
+      x = setInterval(function() {    
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      }, 0)
+  }());
+  //
+        
+           
+                function OpacityDelay() {
+                    
+                    $('.pup-content').addClass('open-box');
+                    
+                }
+                
+                setTimeout(OpacityDelay, 1000);
+                
+     
+
+        $('.close').click(function () {
+            $(".pup-content").removeClass("open-box");
+            $(".pup-content").removeClass("pup");
+            $('.pup-content').addClass('close-pup');
+            function OpacityDelay2() {
+                $('.pup-back').addClass('close-box');
+                    
+                    
+                }
+                
+                setTimeout(OpacityDelay2, 600);
+                
+        });
+
+    </script>
+</body>
+
+</html>
